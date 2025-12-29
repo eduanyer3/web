@@ -1,0 +1,432 @@
+body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(120deg, #f4f7fa 0%, #e0f7fa 100%);
+            line-height: 1.6;
+        }
+        .container {
+            width: 100%;
+            margin: 0 auto;
+            background-color: #ffffff;
+            box-shadow: 0 4px 24px rgba(0,0,0,0.10);
+            border-radius: 0;
+            overflow: hidden;
+            padding: 0 20px;
+            box-sizing: border-box;
+        }
+        .header {
+            width: 100vw;
+            background: linear-gradient(90deg, #004a8d 0%, #007bff 100%);
+            color: white;
+            padding: 40px 0 30px 0;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            box-shadow: 0 2px 12px rgba(0,75,173,0.08);
+            margin-left: calc(-50vw + 50%);
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            letter-spacing: 2px;
+            text-shadow: 0 2px 6px rgba(0,0,0,0.10);
+        }
+        .header p {
+            margin: 14px 0 0 0;
+            font-size: 1.3em;
+            font-weight: 500;
+        }
+        .header img {
+            max-width: 180px;
+            height: auto;
+            margin-top: 24px;
+            border-radius: 12px;
+            box-shadow: 0 4px 16px rgba(0,75,173,0.12);
+        }
+        .main-flex {
+            display: flex;
+            align-items: flex-start;
+            gap: 32px;
+            margin-top: 0;
+        }
+        .main-content {
+            flex: 2 1 0;
+            min-width: 0;
+        }
+        .horario-box {
+            flex: 1 1 320px;
+            background: linear-gradient(120deg, #e3f0fb 0%, #f7fafd 100%);
+            color: #004a8d;
+            border-radius: 20px;
+            box-shadow: 0 4px 18px rgba(0,123,255,0.13);
+            padding: 28px 22px 22px 22px;
+            margin: 30px 0 0 0;
+            max-width: 360px;
+            text-align: center;
+            align-self: flex-start;
+            position: relative;
+            animation: fadeIn 0.8s;
+        }
+        .horario-icon {
+            font-size: 2.7em;
+            color: #007bff;
+            margin-bottom: 8px;
+        }
+        .horario-box h4 {
+            margin: 0 0 8px 0;
+            font-size: 1.5em;
+            color: #007bff;
+            letter-spacing: 1px;
+            font-weight: bold;
+        }
+        .horario-divider {
+            border: none;
+            border-top: 2px dashed #b3d1f7;
+            margin: 10px 0 16px 0;
+        }
+        .horario-sub {
+            color: #00b0ff;
+            font-weight: bold;
+            font-size: 1.13em;
+            margin-bottom: 6px;
+            margin-top: 12px;
+            letter-spacing: 1px;
+        }
+        .horario-info {
+            font-size: 1.13em;
+            margin-bottom: 10px;
+            .form-cita-container {
+  background: #e3f0fb;
+  padding: 32px 28px;
+  margin: 24px auto;
+  max-width: 400px;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(0,75,173,0.13);
+  text-align: left;
+}
+
+        .fecha-hora-box {
+    background: linear-gradient(120deg, #e3f0fb 0%, #f7fafd 100%);
+    border: 2px solid #007bff;
+    padding: 20px 25px;
+    border-radius: 18px;
+    max-width: 400px;
+    margin: 0 auto 24px auto;
+    box-shadow: 0 4px 24px rgba(0, 75, 173, 0.13);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #004a8d;
+    text-align: center;
+}
+
+.fecha-hora-box p {
+    margin: 8px 0;
+    font-weight: 700;
+    font-size: 1.2em;
+    letter-spacing: 0.8px;
+    user-select: none;
+}
+
+.form-cita-container h3 {
+  color: #007bff;
+  margin-top: 0;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.form-row {
+  margin-bottom: 18px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-row label {
+  font-weight: 600;
+  color: #004a8d;
+  margin-bottom: 5px;
+}
+
+.form-row input, .form-row textarea {
+  padding: 9px 11px;
+  border: 1.5px solid #b3d1f7;
+  border-radius: 7px;
+  font-size: 1em;
+  background: #f7fafd;
+  resize: none;
+  font-family: inherit;
+}
+
+.form-row input:focus, .form-row textarea:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.form-cita-container button {
+  display: block;
+  width: 100%;
+  background: linear-gradient(90deg, #007bff 0%, #00c6ff 100%);
+  color: #fff;
+  padding: 13px 0;
+  border: none;
+  border-radius: 20px;
+  font-size: 1.1em;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.25s;
+  margin-top: 10px;
+}
+
+.form-cita-container button:hover {
+  background: linear-gradient(90deg, #00c6ff 0%, #007bff 100%);
+}
+.mensaje-exito {
+  color: #16a085;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 16px;
+}
+        }
+        .buttons {
+            padding: 30px 0 10px 0;
+            background: linear-gradient(90deg, #007bff 0%, #00c6ff 100%);
+            box-shadow: 0 2px 8px rgba(0,123,255,0.08);
+            border-bottom: 2px solid #e0e0e0;
+            text-align: center;
+            position: relative;
+            z-index: 2;
+        }
+        .buttons button {
+            padding: 16px 35px;
+            margin: 0 16px 16px 16px;
+            background: linear-gradient(90deg, #00c6ff 0%, #007bff 100%);
+            color: #fff;
+            border: none;
+            border-radius: 30px;
+            font-size: 1.15em;
+            font-weight: bold;
+            box-shadow: 0 4px 16px rgba(0,123,255,0.18);
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s, background 0.3s;
+            outline: none;
+            position: relative;
+            letter-spacing: 1px;
+        }
+        .buttons button i {
+            margin-right: 8px;
+            font-size: 1.1em;
+        }
+        .buttons button:hover {
+            background: linear-gradient(90deg, #007bff 0%, #00c6ff 100%);
+            transform: translateY(-4px) scale(1.07);
+            box-shadow: 0 8px 24px rgba(0,123,255,0.25);
+        }
+        .buttons button:active {
+            animation: bounce 0.2s;
+        }
+        @keyframes bounce {
+            0% { transform: scale(1);}
+            30% { transform: scale(0.92);}
+            60% { transform: scale(1.08);}
+            100% { transform: scale(1);}
+        }
+        .intro {
+            padding: 30px;
+            background-color: #f9f9f9;
+            text-align: justify;
+            animation: fadeIn 0.7s;
+        }
+        .intro h2 {
+            color: #007bff;
+            text-shadow: 0 2px 8px rgba(0,123,255,0.06);
+        }
+        .content {
+            display: none;
+            padding: 30px;
+            border-top: 1px solid #e0e0e0;
+            animation: fadeIn 0.7s;
+        }
+        @keyframes fadeIn {
+            0% { opacity: 0; transform: translateY(30px);}
+            100% { opacity: 1; transform: translateY(0);}
+        }
+        .content h2 {
+            color: #004a8d;
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 5px;
+            margin-top: 0;
+        }
+        .content h3 {
+            color: #004a8d;
+            margin-top: 20px;
+        }
+        .content img.main-img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin: 20px 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .sub-section img {
+            max-width: 200px;
+            height: auto;
+            border-radius: 10px;
+            display: block;
+            margin: 15px auto;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .footer {
+            background-color: #004a8d;
+            color: white;
+            padding: 30px 10px 18px 10px;
+            text-align: center;
+        }
+        .footer-icons-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px 40px;
+            max-width: 600px;
+            margin: 0 auto 20px auto;
+            justify-items: start;
+            align-items: center;
+        }
+        .footer-icon-card {
+            background: rgba(255,255,255,0.07);
+            border-radius: 10px;
+            padding: 16px 18px;
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            font-size: 1.08em;
+            min-width: 0;
+            transition: background 0.18s;
+        }
+        .footer-icon-card i {
+            font-size: 1.6em;
+            color: #00c6ff;
+            min-width: 32px;
+            text-align: center;
+        }
+        .footer-icon-card a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            transition: color 0.2s;
+        }
+        .footer-icon-card a:hover {
+            color: #e1306c;
+        }
+        .footer-icon-card .ig-handle {
+            font-size: 0.97em;
+            font-weight: normal;
+            margin-left: 2px;
+        }
+        /* Responsive */
+        @media (max-width: 950px) {
+            .main-flex { flex-direction: column; gap: 0; }
+            .horario-box { margin: 20px auto 0 auto; }
+        }
+        @media (max-width: 700px) {
+            .container { padding: 0 4px; }
+            .header, .intro, .content { padding: 16px; }
+            .buttons button { margin: 8px 4px; padding: 12px 18px; font-size: 1em;}
+            .footer-icons-grid { grid-template-columns: 1fr; gap: 16px; }
+            .horario-box { max-width: 100%; }
+        }
+        #listaCitas {
+    padding: 20px;
+    background-color: #e3f0fb;
+    border-radius: 12px;
+    max-width: 600px;
+    margin: 20px auto;
+    box-shadow: 0 4px 14px rgba(0, 123, 255, 0.15);
+}
+
+#listaCitas h3 {
+    color: #007bff;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+#citasGuardadas {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+#citasGuardadas li {
+    background: #ffffff;
+    margin-bottom: 10px;
+    padding: 12px 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 123, 255, 0.1);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #004a8d;
+    line-height: 1.4;
+}
+
+#listaCitas {
+    padding: 20px;
+    background-color: #e3f0fb;
+    border-radius: 12px;
+    max-width: 700px;
+    margin: 20px auto;
+    box-shadow: 0 4px 14px rgba(0, 123, 255, 0.15);
+}
+
+#listaCitas h3 {
+    color: #007bff;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+#buscarCita {
+    width: 100%;
+    padding: 10px 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: 1.5px solid #007bff;
+    font-size: 1em;
+    box-sizing: border-box;
+}
+
+#citasGuardadas {
+    list-style: none;
+    padding: 0;
+}
+
+.cita-item {
+    background: white;
+    margin-bottom: 12px;
+    padding: 15px 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 123, 255, 0.12);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #004a8d;
+}
+
+.cita-detalles {
+    max-width: 80%;
+    line-height: 1.4;
+}
+
+.cita-acciones button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.3em;
+    margin-left: 12px;
+    color: #007bff;
+    transition: color 0.3s;
+}
+
+.cita-acciones button:hover {
+    color: #0056b3;
+}
