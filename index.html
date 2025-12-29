@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centro Médico Clínico Finlay C.A.</title>
+    <link rel="stylesheet" type="text/css" href="CSS.css"
+    <!-- Font Awesome para iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Centro Médico Clínico Finlay CA.</h1>
+            <p>¡SOMOS TU CENTRO MÉDICO DE CONFIANZA!</p>
+            <button id="btnLoginOpen" style="position:absolute; top:20px; right:20px; padding:10px 20px; border:none; border-radius:8px; background:#007bff; color:white; cursor:pointer; font-weight:bold;">Iniciar Sesión</button>
+            <img src="https://raw.githubusercontent.com/eduanyer3/Im-genes-Eduanyer-/refs/heads/main/WhatsApp%20Image%202025-03-10%20at%209.03.38%20PM.jpeg" alt="Logo Centro Médico Clínico Finlay C.A.">
+        </div>
+
+        <div class="buttons">
+            <button onclick="showContent('home')"><i class="fas fa-house"></i> Home</button>
+            <button onclick="showContent('vision')"><i class="fas fa-eye"></i> Visión y Misión</button>
+            <button onclick="showContent('servicios')"><i class="fas fa-stethoscope"></i> Nuestros Servicios</button>
+            <button onclick="showContent('citas')"><i class="fas fa-stethoscope"></i> Agenda tu cita</button>
+            <button id="btnVerCitas"><i class="fas fa-list"></i> Ver citas</button>        
+        </div>
+
+        <div class="main-flex" id="mainFlex">
+            <!-- Horario Box (Home) -->
+            <div class="horario-box" id="homeBox">
+                <div class="horario-icon">
+                    <i class="fas fa-ticket-alt"></i>
+                </div>
+                <h4>Atención al Cliente</h4>
+                <hr class="horario-divider">
+                <div class="horario-sub">Horarios</div>
+                <div class="horario-info">
+                    Lunes a sábado: 7:30 AM - 6:00 PM <br>
+                    Domingos: 8:00 AM - 2:00 PM
+                </div>
+                <hr class="horario-divider">
+                <div class="horario-sub">Teléfono</div>
+                <div class="horario-info">
+                    <i class="fas fa-phone-alt"></i> 0239-2125344
+                </div>
+            </div>
+    
+            <!-- Sobre Nosotros, Quienes Somos, Valores -->
+            <div class="main-content" id="homeContent">
+                <div class="intro">
+                    <h2>Sobre Nosotros</h2>
+                    <p><strong>Centro Médico Clínico Finlay CA.</strong> nace en el 2015; donde el Doctor Ladir Pérez y su esposa Marlida Canario, deciden emprender prestando servicio de consultas médicas, en el Centro Comercial Santa Bárbara de Cua, por distintos inconvenientes deciden cerrar en el 2017; hasta octubre del 2021 donde deciden comenzar nuevamente, en un espacio más amplio y con más servicios de atención en el sector pueblo nuevo de Cua, donde se incorpora el Doctor Wister Méndez, como médico y socio del Centro Medico Finlay CA. Los socios de la empresa son de nacionalidad Cubana, lo que lleva a colocar el nombre de Finlay, en honor al doctor Dr. Carlos Juan Finlay nacido en la ciudad de Camaguey Cuba, el cual dejó gran aporte en el mundo de la medicina porque descubrió y describió la importancia del vector biológico a través de la teoría metaxénica de la transmisión de enfermedades por agentes biológicos, aplicándola a la fiebre amarilla transmitida por el mosquito Aedes aegypti.</p>
+                    <h2>Quienes Somos</h2>
+                    <p>“Somos una empresa líder en prestación de servicio de consultas médicas, con un selecto equipo de profesionales orientados a brindar un servicio rápido, eficiente y de primera calidad.</p>
+                    <h2>Valores</h2>
+                    <ul>
+                        <li>Compromiso</li>
+                        <li>Servicio al Cliente</li>
+                        <li>Ética</li>
+                        <li>Eficiencia</li>
+                        <li>Honestidad</li>
+                        <li>Transparencia</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div id="servicios" class="content">
+            <div class="sub-section">
+                <h3>Exámenes de Laboratorio:</h3>
+                <img src="https://images.pexels.com/photos/3825586/pexels-photo-3825586.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Laboratorio">
+                <ul>
+                    <li>Hematología: 4$</li>
+                    <li>Orina: 2$</li>
+                    <li>Heces: 2$</li>
+                    <li>Perfil 20: 13$</li>
+                </ul>
+            </div>
+            <div class="sub-section">
+                <h3>Consultas:</h3>
+                <img src="https://images.unsplash.com/photo-1584982751601-97dcc096659c?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Consultas">
+                <ul>
+                    <li>Odontología: 5$</li>
+                    <li>Medicina General: 15$</li>
+                    <li>Pediatría: 35$</li>
+                    <li>Cardiología+Electro: 35$</li>
+                    <li>Dermatología: 35$</li>
+                    <li>Ginecología (Eco, Consulta, Test Shiller): 30$</li>
+                    <li>Obsetricia (Control Prenatal 1era vez Control sucesivo): 20$</li>
+                    <li>Endocrino: 35$</li>
+                    <li>Traumatología: 40$</li>
+                    <li>Holter: 42$</li>
+                    <li>Mapa: 42$</li>
+                    <li>Evaluación preoperatoria: 40$</li>
+                    <li>Eco Doppler arterial y venoso: 50$</li>
+                    <li>Eco Carotideo: 35$</li>
+                    <li>Eco Mamario: 35$</li>
+                    <li>Nutricionista: 35$</li>
+                    <li>Nefrología y gastroenterología (Solo consulta): 35$ </li>
+                    <li>Consulta+eco renal: 50$</li>
+                    <li>Consulta+eco abdominal: 50$</li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="vision" class="content">
+            <h2>Visión y Misión</h2>
+            <img class="main-img" src="https://images.unsplash.com/photo-1532938911079-1b06ac7ceec7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Visión y Misión">
+            <div class="sub-section">
+                <h3>Misión</h3>
+                <img src="https://images.pexels.com/photos/305565/pexels-photo-305565.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Visión">
+                <p>Garantizamos un servicio de excelencia a través del recurso humano comprometido en satisfacer de manera óptima la demanda y las necesidades de nuestros clientes, proveedores y así mismo de la comunidad, brindando fianza y bienestar</p>
+            </div>
+            <div class="sub-section">
+                <h3>Visión</h3>
+                <img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Misión">
+                <p>Ser líderes en la prestación de servicios integrales de salud en Cua.</p>
+            </div>
+        </div>
+              
+        <div id="citas" class="content">
+    <div class="form-cita-container">
+        <h3>Solicita tu cita médica</h3>
+        <div id="fechaHoraCitas" class="fecha-hora-box">
+            <p id="fechaCita"></p>
+            <p id="horaCita"></p>
+        </div>
+
+        <form id="formCita" autocomplete="on">
+            <div class="form-row">
+                <label for="nombre">Nombre completo:</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+            <div class="form-row">
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-row">
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" required pattern="[0-9]{10,}">
+            </div>
+            <div class="form-row">
+                <label for="fecha">Fecha de cita:</label>
+                <input type="date" id="fecha" name="fecha" required>
+            </div>
+            <div class="form-row">
+                <label for="hora">Hora preferida:</label>
+                <input type="time" id="hora" name="hora" required>
+            </div>
+            <div class="form-row">
+                <label for="motivo">Motivo de consulta:</label>
+                <textarea id="motivo" name="motivo" rows="2"></textarea>
+            </div>
+            <button type="submit">Solicitar cita</button>
+        </form>
+    </div>
+</div>
+
+<div id="listaCitas" class="content" style="display:none;">
+    <h3>Listado de citas registradas</h3>
+    <input type="text" id="buscarCita" placeholder="Buscar citas por nombre, email, fecha..." />
+    <ul id="citasGuardadas"></ul>
+</div>
+
+
+        <div class="footer">
+            <div class="footer-icons-grid">
+                <div class="footer-icon-card">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Sector Pueblo Nuevo, Calle Guaicaipuro, a 100 metros del C.C El Colonial Cúa, Estado Miranda, Venezuela</span>
+                </div>
+                <div class="footer-icon-card">
+                    <i class="fab fa-instagram"></i>
+                    <a href="https://www.instagram.com/cmcfinlay_oficial/" target="_blank">@cmcfinlay_oficial</a>
+                </div>
+                <div class="footer-icon-card">
+                    <i class="fas fa-phone-alt"></i>
+                    <span>0239-2125344</span>
+                </div>
+                <div class="footer-icon-card">
+                    <i class="fas fa-envelope"></i>
+                    <span>cmcfinlay@gmail.com</span>
+                </div>
+            </div>
+            <div>© 2025 Centro Médico Clínico Finlay CA. Todos los derechos reservados.</div>
+        </div>
+    </div>
+    <!-- Modal para Login y Registro -->
+<div id="loginModal" style="display:none; position:fixed; top:0; left:0; width:100vw; height:100vh; background:rgba(0,0,0,0.6); justify-content:center; align-items:center; z-index:1000;">
+  <div style="background:#fff; border-radius:12px; padding:30px; max-width:400px; width:90%; position:relative; box-shadow:0 0 20px rgba(0,123,255,0.4); font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+    
+    <button id="modalCloseBtn" style="position:absolute; top:12px; right:12px; border:none; background:none; font-size:20px; cursor:pointer;">&times;</button>
+
+    <div id="loginForm" style="display:block;">
+      <h2 style="color:#007bff; text-align:center; margin-bottom:25px;">Iniciar Sesión</h2>
+      <form>
+        <div style="margin-bottom:15px;">
+          <label for="loginUser" style="display:block; font-weight:bold; margin-bottom:5px;">Usuario</label>
+          <input type="text" id="loginUser" required style="width:100%; padding:8px; border-radius:6px; border:1.5px solid #007bff;">
+        </div>
+        <div style="margin-bottom:15px;">
+          <label for="loginPass" style="display:block; font-weight:bold; margin-bottom:5px;">Contraseña</label>
+          <input type="password" id="loginPass" required style="width:100%; padding:8px; border-radius:6px; border:1.5px solid #007bff;">
+        </div>
+        <button type="submit" style="width:100%; padding:10px; background:#007bff; color:#fff; font-weight:bold; border:none; border-radius:10px; cursor:pointer; font-size:1.1em;">Entrar</button>
+      </form>
+      <p style="text-align:center; margin-top:15px; font-size:0.9em;">¿No tienes cuenta? <a href="#" id="showRegister" style="color:#007bff; cursor:pointer;">Regístrate aquí</a></p>
+      <p id="loginError" style="color:red; font-weight:bold; text-align:center; display:none;"></p>
+    </div>
+
+    <div id="registerForm" style="display:none;">
+      <h2 style="color:#007bff; text-align:center; margin-bottom:25px;">Registro de Usuario</h2>
+      <form>
+        <div style="margin-bottom:15px;">
+          <label for="regUser" style="display:block; font-weight:bold; margin-bottom:5px;">Usuario</label>
+          <input type="text" id="regUser" required style="width:100%; padding:8px; border-radius:6px; border:1.5px solid #007bff;">
+        </div>
+        <div style="margin-bottom:15px;">
+          <label for="regPass" style="display:block; font-weight:bold; margin-bottom:5px;">Contraseña</label>
+          <input type="password" id="regPass" required style="width:100%; padding:8px; border-radius:6px; border:1.5px solid #007bff;">
+        </div>
+        <button type="submit" style="width:100%; padding:10px; background:#007bff; color:#fff; font-weight:bold; border:none; border-radius:10px; cursor:pointer; font-size:1.1em;">Registrar</button>
+      </form>
+      <p style="text-align:center; margin-top:15px; font-size:0.9em;">¿Ya tienes cuenta? <a href="#" id="showLogin" style="color:#007bff; cursor:pointer;">Inicia sesión aquí</a></p>
+      <p id="registerError" style="color:red; font-weight:bold; text-align:center; display:none;"></p>
+    </div>
+  </div>
+</div>
+
+    <script>
+// Mostrar sólo la sección seleccionada
+function showContent(section) {
+    // Ocultar todos los content
+    document.getElementById('servicios').style.display = 'none';
+    document.getElementById('vision').style.display = 'none';
+    document.getElementById('citas').style.display = 'none';
+    document.getElementById('listaCitas').style.display = 'none';
+
+    // Mostrar u ocultar home
+    if (section === 'home') {
+        document.getElementById('mainFlex').style.display = 'flex';
+    } else {
+        document.getElementById('mainFlex').style.display = 'none';
+        document.getElementById(section).style.display = 'block';
+    }
+}
+
+// Mostrar fecha y hora actuales en sección citas
+function actualizarFechaHora() {
+    const ahora = new Date();
+
+    let dia = ahora.getDate();
+    let mes = ahora.getMonth() + 1;
+    const año = ahora.getFullYear();
+    dia = dia < 10 ? "0" + dia : dia;
+    mes = mes < 10 ? "0" + mes : mes;
+    const fechaFormateada = `${dia}/${mes}/${año}`;
+
+    let horas = ahora.getHours();
+    let minutos = ahora.getMinutes();
+    let segundos = ahora.getSeconds();
+    horas = horas < 10 ? "0" + horas : horas;
+    minutos = minutos < 10 ? "0" + minutos : minutos;
+    segundos = segundos < 10 ? "0" + segundos : segundos;
+    const horaFormateada = `${horas}:${minutos}:${segundos}`;
+
+    const fechaCitaElem = document.getElementById("fechaCita");
+    const horaCitaElem = document.getElementById("horaCita");
+    if (fechaCitaElem && horaCitaElem) {
+        fechaCitaElem.textContent = "Fecha: " + fechaFormateada;
+        horaCitaElem.textContent = "Hora: " + horaFormateada;
+    }
+
+    setTimeout(actualizarFechaHora, 1000);
+}
+actualizarFechaHora();
+
+const formCita = document.getElementById('formCita');
+const citasKey = 'citas';
+
+// Guardar cita nueva
+formCita.addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    const cita = {
+        id: Date.now(), // ID único timestamp para manejar edición eliminación
+        nombre: formCita.nombre.value.trim(),
+        email: formCita.email.value.trim(),
+        telefono: formCita.telefono.value.trim(),
+        fecha: formCita.fecha.value,
+        hora: formCita.hora.value,
+        motivo: formCita.motivo.value.trim(),
+        fecha_registro: new Date().toISOString()
+    };
+
+    let citas = JSON.parse(localStorage.getItem(citasKey)) || [];
+
+    // Si estamos editando cita, actualizar en vez de agregar
+    if (formCita.dataset.editingId) {
+        const editId = Number(formCita.dataset.editingId);
+        citas = citas.map(c => c.id === editId ? cita : c);
+        delete formCita.dataset.editingId;
+    } else {
+        citas.push(cita);
+    }
+
+    localStorage.setItem(citasKey, JSON.stringify(citas));
+
+    alert('Tu cita ha sido registrada correctamente.');
+
+    formCita.reset();
+    mostrarCitas();
+    showContent('listaCitas');
+});
+
+// Mostrar citas con buscar, editar y eliminar
+function mostrarCitas(filtro = '') {
+    const citasGuardadas = JSON.parse(localStorage.getItem(citasKey)) || [];
+    const ul = document.getElementById('citasGuardadas');
+    ul.innerHTML = '';
+
+    // Filtrar
+    const citasFiltradas = citasGuardadas.filter(cita =>
+        cita.nombre.toLowerCase().includes(filtro.toLowerCase()) ||
+        cita.email.toLowerCase().includes(filtro.toLowerCase()) ||
+        cita.telefono.includes(filtro) ||
+        cita.fecha.includes(filtro) ||
+        cita.motivo.toLowerCase().includes(filtro.toLowerCase())
+    );
+
+    if (citasFiltradas.length === 0) {
+        ul.innerHTML = '<li>No hay citas que coincidan con la búsqueda.</li>';
+        return;
+    }
+
+    citasFiltradas.forEach(cita => {
+        const li = document.createElement('li');
+        li.className = 'cita-item';
+        li.innerHTML = `
+            <div class="cita-detalles">
+                <strong>${cita.nombre}</strong> - ${cita.fecha} a las ${cita.hora}
+                <br>Email: ${cita.email} | Tel: ${cita.telefono}
+                <br>Motivo: ${cita.motivo || 'Sin motivo'}
+            </div>
+            <div class="cita-acciones">
+                <button onclick="editarCita(${cita.id})" title="Editar"><i class="fas fa-edit"></i></button>
+                <button onclick="eliminarCita(${cita.id})" title="Eliminar"><i class="fas fa-trash-alt"></i></button>
+            </div>
+        `;
+        ul.appendChild(li);
+    });
+}
+
+// Eliminar cita
+function eliminarCita(id) {
+    if (!confirm('¿Seguro que deseas eliminar esta cita?')) return;
+    let citas = JSON.parse(localStorage.getItem(citasKey)) || [];
+    citas = citas.filter(cita => cita.id !== id);
+    localStorage.setItem(citasKey, JSON.stringify(citas));
+    mostrarCitas();
+}
+
+// Editar cita
+function editarCita(id) {
+    let citas = JSON.parse(localStorage.getItem(citasKey)) || [];
+    const cita = citas.find(c => c.id === id);
+    if (!cita) return alert('Cita no encontrada.');
+
+    // Mostrar formulario y llenar textos
+    showContent('citas');
+    formCita.nombre.value = cita.nombre;
+    formCita.email.value = cita.email;
+    formCita.telefono.value = cita.telefono;
+    formCita.fecha.value = cita.fecha;
+    formCita.hora.value = cita.hora;
+    formCita.motivo.value = cita.motivo;
+    formCita.dataset.editingId = id; // Marcar que está editando
+}
+
+// Buscar citas
+document.getElementById('buscarCita').addEventListener('input', function() {
+    mostrarCitas(this.value);
+});
+
+// Mostrar citas al cargar página
+window.addEventListener('load', () => {
+    mostrarCitas();
+});
+
+// Variables globales para usuario autenticado
+let usuarioActual = null;
+
+// Al abrir modal login
+document.getElementById('btnLoginOpen').addEventListener('click', () => {
+  showLoginModal();
+});
+
+// Mostrar modal login
+function showLoginModal() {
+  document.getElementById('loginModal').style.display = 'flex';
+  document.getElementById('loginForm').style.display = 'block';
+  document.getElementById('registerForm').style.display = 'none';
+  document.getElementById('loginError').style.display = 'none';
+  document.getElementById('registerError').style.display = 'none';
+}
+
+// Cerrar modal
+document.getElementById('modalCloseBtn').addEventListener('click', () => {
+  document.getElementById('loginModal').style.display = 'none';
+});
+
+// Cambiar entre login y registro
+document.getElementById('showRegister').addEventListener('click', e => {
+  e.preventDefault();
+  document.getElementById('loginForm').style.display = 'none';
+  document.getElementById('registerForm').style.display = 'block';
+  document.getElementById('loginError').style.display = 'none';
+});
+
+document.getElementById('showLogin').addEventListener('click', e => {
+  e.preventDefault();
+  document.getElementById('registerForm').style.display = 'none';
+  document.getElementById('loginForm').style.display = 'block';
+  document.getElementById('registerError').style.display = 'none';
+});
+
+// Arreglo de usuarios almacenados (en localStorage)
+const usuariosKey = 'usuarios';
+
+// Función para obtener usuarios guardados
+function obtenerUsuarios() {
+  return JSON.parse(localStorage.getItem(usuariosKey)) || [];
+}
+
+// Guardar usuarios
+function guardarUsuarios(usuarios) {
+  localStorage.setItem(usuariosKey, JSON.stringify(usuarios));
+}
+
+// Registrar usuario (form en #registerForm)
+document.querySelector('#registerForm form').addEventListener('submit', e => {
+  e.preventDefault();
+  const usuario = document.getElementById('regUser').value.trim();
+  const pass = document.getElementById('regPass').value.trim();
+  const errorElem = document.getElementById('registerError');
+  errorElem.style.display = 'none';
+
+  if (!usuario || !pass) return;
+
+  let usuarios = obtenerUsuarios();
+
+  // Validar si usuario existe
+  if (usuarios.some(u => u.usuario.toLowerCase() === usuario.toLowerCase())) {
+    errorElem.textContent = 'El usuario ya existe.';
+    errorElem.style.display = 'block';
+    return;
+  }
+
+  // Guardar nuevo usuario
+  usuarios.push({ usuario, password: pass });
+  guardarUsuarios(usuarios);
+
+  alert('Registro exitoso. Ahora ingresa para continuar.');
+  // Cambiar a login
+  document.getElementById('registerForm').style.display = 'none';
+  document.getElementById('loginForm').style.display = 'block';
+});
+
+// Iniciar sesión (form en #loginForm)
+document.querySelector('#loginForm form').addEventListener('submit', e => {
+  e.preventDefault();
+  const usuario = document.getElementById('loginUser').value.trim();
+  const pass = document.getElementById('loginPass').value.trim();
+  const errorElem = document.getElementById('loginError');
+  errorElem.style.display = 'none';
+
+  let usuarios = obtenerUsuarios();
+  let userEncontrado = usuarios.find(u => u.usuario.toLowerCase() === usuario.toLowerCase() && u.password === pass);
+
+  if (!userEncontrado) {
+    errorElem.textContent = 'Usuario o contraseña incorrectos.';
+    errorElem.style.display = 'block';
+    return;
+  }
+
+  // Login exitoso
+  usuarioActual = userEncontrado.usuario;
+  document.getElementById('loginModal').style.display = 'none';
+
+  // Mostrar estado login (ejemplo: botón como "Cerrar sesión")
+  actualizarEstadoLogin();
+  alert('¡Bienvenido, ' + usuarioActual + '!');
+  // Mostrar lista de citas automáticamente al iniciar sesión
+  showContent('listaCitas');
+  mostrarCitas();
+});
+
+// Actualizar botón login para mostrar cerrar sesión si está autenticado
+function actualizarEstadoLogin() {
+  const btnLogin = document.getElementById('btnLoginOpen');
+  if (usuarioActual) {
+    btnLogin.textContent = 'Cerrar Sesión';
+    btnLogin.style.background = '#e1306c';
+  } else {
+    btnLogin.textContent = 'Iniciar Sesión';
+    btnLogin.style.background = '#007bff';
+  }
+}
+
+// Evento para botón cerrar sesión / iniciar sesión
+document.getElementById('btnLoginOpen').addEventListener('click', () => {
+  if (usuarioActual) {
+    // Cerrar sesión
+    usuarioActual = null;
+    actualizarEstadoLogin();
+    alert('Sesión cerrada.');
+    showContent('home');
+  } else {
+    // Abrir login modal
+    showLoginModal();
+  }
+});
+
+// Modificar acción botón "Ver citas" para mostrar sólo si está logueado
+document.getElementById('btnVerCitas').addEventListener('click', () => {
+  if (!usuarioActual) {
+    alert('Debes iniciar sesión para ver las citas.');
+    showLoginModal();
+  } else {
+    mostrarCitas();
+    showContent('listaCitas');
+  }
+});
+
+// Al cargar la página, actualizar estado login
+window.addEventListener('load', () => {
+  actualizarEstadoLogin();
+  mostrarCitas(); // opcional para tener siempre lista preparada tras login
+});
+
+    </script>
+</body>
+</html>
